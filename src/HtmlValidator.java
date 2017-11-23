@@ -15,7 +15,7 @@ public class HtmlValidator
 	    if (tags != null) {
 	        q = new LinkedList<HtmlTag>(tags);
         }
-        else {
+      	else {
 	        throw new IllegalArgumentException();
         }
 	}
@@ -24,10 +24,10 @@ public class HtmlValidator
 	{
 		if(tag != null) {
 		    q.add(tag);
-        }
+		}
         else
         {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException();;
         }
 	}
 

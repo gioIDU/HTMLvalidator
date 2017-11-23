@@ -27,13 +27,12 @@ public class HtmlValidator
 		}
         else
         {
-            throw new IllegalArgumentException();;
+            throw new IllegalArgumentException();
         }
 	}
 
     public Queue<HtmlTag> getTags() {
 	    Queue<HtmlTag> copyOfQueue = new LinkedList<>(q);
 	    return copyOfQueue;
-
     }
 }

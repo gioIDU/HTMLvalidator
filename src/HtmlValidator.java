@@ -35,4 +35,9 @@ public class HtmlValidator
 	    Queue<HtmlTag> copyOfQueue = new LinkedList<>(q);
 	    return copyOfQueue;
     }
+
+    public void removeAll (String e) {
+	    while (!e.isEmpty()) {
+        }
+    }
 }

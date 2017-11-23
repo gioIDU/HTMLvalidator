@@ -32,6 +32,8 @@ public class HtmlValidator
 	}
 
     public Queue<HtmlTag> getTags() {
-	    
+	    Queue<HtmlTag> copyOfQueue = new LinkedList<>(q);
+	    return copyOfQueue;
+
     }
 }

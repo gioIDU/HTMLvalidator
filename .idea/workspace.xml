@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="128b0441-1806-40a0-b069-7fd54f9146ac" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HtmlTag.class" afterPath="$PROJECT_DIR$/src/HtmlTag.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HtmlTag.java" afterPath="$PROJECT_DIR$/src/HtmlTag.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HtmlValidator.java" afterPath="$PROJECT_DIR$/src/HtmlValidator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HtmlValidatorTest.java" afterPath="$PROJECT_DIR$/src/HtmlValidatorTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/src/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ValidatorMain.java" afterPath="$PROJECT_DIR$/src/ValidatorMain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test1.html" afterPath="$PROJECT_DIR$/src/test1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test2.html" afterPath="$PROJECT_DIR$/src/test2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test3.html" afterPath="$PROJECT_DIR$/src/test3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test4.html" afterPath="$PROJECT_DIR$/src/test4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test5.html" afterPath="$PROJECT_DIR$/src/test5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test6.html" afterPath="$PROJECT_DIR$/src/test6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test7.html" afterPath="$PROJECT_DIR$/src/test7.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test8.html" afterPath="$PROJECT_DIR$/src/test8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HtmlValidator.java" afterPath="$PROJECT_DIR$/src/HtmlValidator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +27,8 @@
       <file leaf-file-name="HtmlValidator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HtmlValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+            <state relative-caret-position="324">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#130#131#0" expanded="true" />
@@ -309,8 +296,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HtmlValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        <state relative-caret-position="324">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#130#131#0" expanded="true" />

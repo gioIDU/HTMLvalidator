@@ -49,12 +49,15 @@ public class ValidatorMain
 						// create the HTML validator
 						validator = new HtmlValidator(tags);
 					}
-					catch (MalformedURLException mfurle)
+					catch (MalformedURLException mfurle) {
 						System.out.println("Badly formatted URL: " + url);
-					catch (FileNotFoundException fnfe)
+					}
+					catch (FileNotFoundException fnfe) {
 						System.out.println("Web page or file not found: " + url);
-					catch (IOException ioe)
+					}
+					catch (IOException ioe) {
 						System.out.println("I/O error: " + ioe.getMessage());
+					}
 				}
 				else
 				{

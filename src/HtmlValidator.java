@@ -12,39 +12,44 @@ public class HtmlValidator
 
 	public HtmlValidator (Queue<HtmlTag> tags)
 	{
-	    if (tags != null) {
+	    if (tags != null)
+	    {
 	        q = new LinkedList<HtmlTag>(tags);
         }
-      	else {
+      	else
+      	{
 	        throw new IllegalArgumentException();
         }
 	}
 
 	public void addTag (HtmlTag tag)
 	{
-		if(tag != null) {
+		if(tag != null)
 		    q.add(tag);
-		}
         else
-        {
             throw new IllegalArgumentException();
-        }
 	}
 
-    public Queue<HtmlTag> getTags() {
+    public Queue<HtmlTag> getTags()
+    {
 	    Queue<HtmlTag> copyOfQueue = new LinkedList<>(q);
 	    return copyOfQueue;
     }
 
-    public void removeAll (String e) {
-		Queue<HtmlTag> backup = new LinkedList<HtmlTag>();
-	    while (!q.isEmpty()) {
-			if () {
-
+    public void removeAll (String e)
+    {
+		Queue<HtmlTag> backup = new LinkedList<HtmlTag>(q);
+	    while (!q.isEmpty())
+	    {
+	    	HtmlTag element = q.remove();
+			if (element.getElement() != e)
+			{
+				backup.add(element);
 			}
-
-
-
+        }
+        while (!backup.isEmpty())
+        {
+        	q.add(backup.remove());
         }
     }
 }

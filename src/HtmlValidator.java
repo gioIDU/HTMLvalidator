@@ -37,7 +37,14 @@ public class HtmlValidator
     }
 
     public void removeAll (String e) {
-	    while (!e.isEmpty()) {
+		Queue<HtmlTag> backup = new LinkedList<HtmlTag>();
+	    while (!q.isEmpty()) {
+			if () {
+
+			}
+
+
+
         }
     }
 }

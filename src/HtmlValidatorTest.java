@@ -9,10 +9,14 @@ public class HtmlValidatorTest {
 		// <b>Hi</b><br/>
 		// A Queue of tags you may modify and pass to your HtmlValidator object
 		Queue<HtmlTag> tags = new LinkedList<HtmlTag>();
-		tags.add(new HtmlTag("b", true)); // <b>
-		tags.add(new HtmlTag("b", false)); // </b>
+		tags.add(new HtmlTag("p", true)); // <b>
+		tags.add(new HtmlTag("p", false)); // </b>
+        tags.add(new HtmlTag("p", true)); // <b>
+        tags.add(new HtmlTag("p", false));
 		tags.add(new HtmlTag("br")); // <br/>
-
+		HtmlValidator test = new HtmlValidator(tags);
+//		test.removeAll("p");
+		test.validate();
 		// Your code here
 	}
 }

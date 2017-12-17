@@ -38,8 +38,8 @@ public class HtmlValidator
 
     public void removeAll (String e)
     {
-		Queue<HtmlTag> backup = new LinkedList<HtmlTag>(q);
-	    while (!q.isEmpty())
+		Queue<HtmlTag> backup = new LinkedList<HtmlTag>();
+        while (!q.isEmpty())
 	    {
 	    	HtmlTag element = q.remove();
 			if (element.getElement() != e)
@@ -50,6 +50,27 @@ public class HtmlValidator
         while (!backup.isEmpty())
         {
         	q.add(backup.remove());
+        }
+    }
+
+    public void validate() {
+        Stack<HtmlTag> validate = new Stack<HtmlTag>();
+        Queue<HtmlTag> backup = new LinkedList<HtmlTag>(q);
+        System.out.println(backup);
+        int i = 1;
+        String x = "";
+
+        while(!q.isEmpty()) {
+            HtmlTag element = q.remove();
+            if (element.isOpenTag() == true) {
+                validate.push(element);
+                int z = 0;
+                while (z < i) {
+                    x = "\t" + x ;
+                    z++;
+                }
+                System.out.println(x + element);
+            }
         }
     }
 }

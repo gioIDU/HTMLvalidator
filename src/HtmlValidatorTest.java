@@ -9,11 +9,7 @@ public class HtmlValidatorTest {
 		// <b>Hi</b><br/>
 		// A Queue of tags you may modify and pass to your HtmlValidator object
 		Queue<HtmlTag> tags = new LinkedList<HtmlTag>();
-		tags.add(new HtmlTag("b", true));
-		tags.add(new HtmlTag("i", true));
-		tags.add(new HtmlTag("b", false));
-		tags.add(new HtmlTag("i", false));
-		tags.add(new HtmlTag("b", false));
+
 		tags.add(new HtmlTag("html", false));
 
 

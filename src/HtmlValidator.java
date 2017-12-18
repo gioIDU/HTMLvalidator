@@ -90,7 +90,6 @@ public class HtmlValidator
                 }
             }
         }
-
         if(!validate.isEmpty()) {
             while(!validate.isEmpty()) {
                 System.out.println("ERROR Unclosed Tag: " + validate.pop().toString());

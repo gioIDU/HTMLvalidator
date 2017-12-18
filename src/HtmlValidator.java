@@ -60,16 +60,40 @@ public class HtmlValidator
         int i = 1;
         String x = "";
 
-        while(!q.isEmpty()) {
-            HtmlTag element = q.remove();
+        while(!backup.isEmpty()) {
+            HtmlTag element = backup.remove();
             if (element.isOpenTag() == true) {
                 validate.push(element);
                 int z = 0;
                 while (z < i) {
+                    System.out.println(x + element);
                     x = "\t" + x ;
                     z++;
                 }
-                System.out.println(x + element);
+            }
+            if(element.isOpenTag() == false) {
+                if (validate.isEmpty()) {
+                    System.out.println("ERROR Unexpected Tag: " + element.toString());
+                } else {
+
+                    HtmlTag elementStack = validate.pop();
+                    if (elementStack.matches(element)) {
+                        int z = 0;
+                        while (z < i) {
+                            x = x.substring(0, x.length() - 1);
+                            System.out.println(x + element);
+                            z++;
+                        }
+                    } else {
+                        System.out.println("ERROR Unexpected Tag: " + element.toString());
+                    }
+                }
+            }
+        }
+
+        if(!validate.isEmpty()) {
+            while(!validate.isEmpty()) {
+                System.out.println("ERROR Unclosed Tag: " + validate.pop().toString());
             }
         }
     }
